@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="76.208">
+<testcase classname="Order a product from Blaze" name="Order a product" time="67.666">
+<system-out><![CDATA[Given Navigate through the product categories...............................passed
+Then I Add given "<products>" in the cart...................................passed
+And Navigate to cart and Delete a product...................................passed
+Then click on place order...................................................passed
+And Fill the details and click on purchase..................................passed
+Then Verify the purchase amount.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E2E Pets Test" name="Get Available pets list" time="3.005">
+<system-out><![CDATA[Given User sent a request with pet status as "available"....................passed
+Then A list of available pets is returned...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E2E Pets Test" name="Add a pet to the store" time="2.021">
+<system-out><![CDATA[Given User want to add a pet with details "1","dog","dobberman","https://image.com","1","strongdog","availaible".passed
+Then verify that pet is added to the store..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E2E Pets Test" name="Update a pet in the store" time="1.594">
+<system-out><![CDATA[Given User want to update a pet record details as "sold"....................passed
+Then I verify that pet details are updated..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E2E Pets Test" name="Delete a pet from the list" time="1.645">
+<system-out><![CDATA[Given User sent a delete pet request........................................passed
+Then a pet is deleted successfully from the store...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

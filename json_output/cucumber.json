@@ -1,0 +1,410 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-20T14:58:09.694Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11436000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Order a product",
+        "description": "",
+        "id": "order-a-product-from-blaze;order-a-product",
+        "after": [
+          {
+            "result": {
+              "duration": 722000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16445000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate through the product categories",
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.navigate_through_the_product_categories()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28594000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Add given \"\u003cproducts\u003e\" in the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cproducts\u003e\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.BlazeDefinition.i_add_given_in_the_cart(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Dell i7 8gb"
+                ]
+              },
+              {
+                "cells": [
+                  "Sony vaio i5"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9651000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Navigate to cart and Delete a product",
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.navigate_to_cart_and_delete_a_product(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Dell i7 8gb"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on place order",
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.click_on_place_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 561000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Fill the details and click on purchase",
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.fill_the_details_and_click_on_purchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Verify the purchase amount",
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.verify_the_purchase_amount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UI"
+          }
+        ]
+      }
+    ],
+    "name": "Order a product from Blaze",
+    "description": "  The purpose of these test to test the Order system",
+    "id": "order-a-product-from-blaze",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Blaze.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-20T14:59:17.385Z",
+        "line": 11,
+        "name": "Get Available pets list",
+        "description": "",
+        "id": "e2e-pets-test;get-available-pets-list;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2999000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sent a request with pet status as \"available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"available\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.PetDefinition.user_sent_a_request_with_pet_status_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "A list of available pets is returned",
+            "match": {
+              "location": "stepDefinitions.PetDefinition.a_list_of_available_pets_is_returned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-20T14:59:20.399Z",
+        "line": 20,
+        "name": "Add a pet to the store",
+        "description": "",
+        "id": "e2e-pets-test;add-a-pet-to-the-store;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2018000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User want to add a pet with details \"1\",\"dog\",\"dobberman\",\"https://image.com\",\"1\",\"strongdog\",\"availaible\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"dog\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"dobberman\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"https://image.com\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"strongdog\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"availaible\"",
+                  "offset": 94
+                }
+              ],
+              "location": "stepDefinitions.PetDefinition.user_want_to_add_a_pet_with_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify that pet is added to the store",
+            "match": {
+              "location": "stepDefinitions.PetDefinition.verify_that_pet_is_added_to_the_store()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-20T14:59:22.428Z",
+        "line": 29,
+        "name": "Update a pet in the store",
+        "description": "",
+        "id": "e2e-pets-test;update-a-pet-in-the-store;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1592000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User want to update a pet record details as \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sold\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.PetDefinition.user_want_to_update_a_pet_record_details_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I verify that pet details are updated",
+            "match": {
+              "location": "stepDefinitions.PetDefinition.i_verify_that_pet_details_are_updated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-20T14:59:24.028Z",
+        "line": 32,
+        "name": "Delete a pet from the list",
+        "description": "",
+        "id": "e2e-pets-test;delete-a-pet-from-the-list",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.BlazeDefinition.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1640000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User sent a delete pet request",
+            "match": {
+              "location": "stepDefinitions.PetDefinition.user_sent_a_delete_pet_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "a pet is deleted successfully from the store",
+            "match": {
+              "location": "stepDefinitions.PetDefinition.a_pet_is_deleted_successfully_from_the_store()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      }
+    ],
+    "name": "E2E Pets Test",
+    "description": "  The purpose of these test to test the Pet API\u0027s",
+    "id": "e2e-pets-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Pet.feature",
+    "tags": []
+  }
+]
